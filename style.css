@@ -220,13 +220,11 @@ ul{
 .in-diplomea:hover {
     background-color: rgb(77, 77, 77);
     color : white;
-    transition: 500ms;
 }
 
 .in-diplomeb:hover {
     background-color: rgb(77, 77, 77);
     color : white;
-    transition: 500ms;
 }
 
 #experiences {
@@ -270,13 +268,11 @@ ul{
 .in-experiences1:hover {
     background-color: lightgray;
     color: black;
-    transition: 500ms;
 }
 
 .in-experiences2:hover {
     background-color: lightgray;
     color: black;
-    transition: 500ms;
 }
 
 .in-experiences2 {
