@@ -73,7 +73,7 @@ ul{
 }
 
 .bouton-nav a:hover{
-    background-color: rgba(255, 236, 236, 0.603);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0)
 }
 
@@ -103,11 +103,6 @@ ul{
     padding-bottom:0;
     margin-bottom: 0;
     box-shadow: inset 0 0.5em 0 0 rgb(255, 255, 255);
-}
-
-#texte-apropos{
-    display: flex;
-    float: right;
 }
 
 #apropos-droite{
@@ -155,7 +150,7 @@ ul{
 
 #diplomes{
     background-color: #737cf8;
-    height: 50em;
+    height: 63em;
     box-shadow: inset 0 0.5em 0 0 rgb(255, 255, 255);
 }
 
@@ -170,6 +165,8 @@ ul{
 
 #diplomes h3 {
     font-family: "quicksandregular";
+    font-size: 38px;
+    margin-bottom: 2em;
 }
 
 #sepa-diplome{
@@ -182,31 +179,29 @@ ul{
 
 .in-diplomea{
     display: inline-table;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(39, 39, 39);
     height: 10em;
     width: 20em;
     text-align: center;
     margin-top: 5em;
-    margin-left: 10em;
+    margin-left: 9em;
     margin-right: 8em;
     padding-top: 3em;
-    border-radius: 50%;
     border: 3px #4e528a outset;
-    color: #6871ec;
+    color: rgb(92, 92, 92);
 }
 
 .in-diplomeb{
-    display: inline-block;
-    background-color: white;
-    height: 10em;
-    width: 23em;
+    display: inline-table;
+    background-color: rgb(39, 39, 39);
+    height: 19.2em;
+    width: 20em;
     text-align: center;
+    margin-left: 25em;
     margin-top:2em;
-    margin-left: 24em;
-    padding-top: 3em;
-    border-radius: 50%;
+    padding-top: 2em;
     border: 3px #4e528a outset;
-    color: #6871ec;
+    color: rgb(92, 92, 92);
 }
 
 .in-diplomea p {
@@ -217,16 +212,135 @@ ul{
     font-family: 'rubikregular';
 }
 
+.in-diplomeb h3 {
+    margin-top: 1.5em;
+}
+
 .in-diplomea:hover {
-    background-color: rgb(77, 77, 77);
-    color : white;
+    background-color: rgb(236, 236, 236);
+    color : rgb(2, 50, 70);
     transition: 400ms;
 }
 
 .in-diplomeb:hover {
-    background-color: rgb(77, 77, 77);
-    color : white;
+    background-color: rgb(236, 236, 236);
+    color : rgb(2, 50, 70);
     transition: 400ms;
+}
+
+#deroulant-dip1 {
+    transform: scale(0);
+    position: absolute;
+    margin-top: 11.2em;
+    height: 4.2em;
+    width: 20em;
+    background-color: rgb(180, 180, 180);
+}   
+
+#deroulant-dip1 p {
+    color: rgb(2, 50, 70);
+    font-family: 'quicksandregular';
+    font-size: 25px;
+}
+
+#deroulant-dip2 {
+    transform: scale(0);
+    position: absolute;
+    margin-top: 11.2em;
+    height: 4.2em;
+    width: 20em;
+    background-color: rgb(180, 180, 180);
+}   
+
+#deroulant-dip2 p {
+    color: rgb(2, 50, 70);
+    font-family: 'quicksandregular';
+    font-size: 25px;
+}
+
+#deroulant-dip3 {
+    transform: scale(0);
+    position: absolute;
+    margin-top: 11.2em;
+    height: 4.2em;
+    width: 20em;
+    background-color: rgb(180, 180, 180);
+}   
+
+#deroulant-dip3 p {
+    color: rgb(2, 50, 70);
+    font-family: 'quicksandregular';
+    font-size: 25px;
+}
+
+#deroulant-dip4 {
+    transform: scale(0);
+    position: absolute;
+    margin-top: 15em;
+    height: 4.2em;
+    width: 20em;
+    background-color: rgb(180, 180, 180);
+}   
+
+#deroulant-dip4 p {
+    color: rgb(2, 50, 70);
+    font-family: 'quicksandregular';
+    font-size: 25px;
+}
+
+#deroulant-dip5 {
+    transform: scale(0);
+    position: absolute;
+    margin-top: 15.1em;
+    height: 4.2em;
+    width: 20em;
+    background-color: rgb(180, 180, 180);
+}   
+
+#deroulant-dip5 p {
+    color: rgb(2, 50, 70);
+    font-family: 'quicksandregular';
+    font-size: 25px;
+}
+
+.in-diplomea:hover #deroulant-dip1 {
+    transform: scaleY(1);
+    transition: transform 200ms;
+    transform-origin: bottom;
+}
+
+.in-diplomea:hover #deroulant-dip2 {
+    transform: scaleY(1);
+    transition: transform 200ms;
+    transform-origin: bottom;
+}
+
+.in-diplomea:hover #deroulant-dip3 {
+    transform: scaleY(1);
+    transition: transform 200ms;
+    transform-origin: bottom;
+}
+
+.in-diplomeb:hover #deroulant-dip4 {
+    transform: scaleY(1);
+    transition: transform 200ms;
+    transform-origin: bottom;
+}
+
+.in-diplomeb:hover #deroulant-dip5 {
+    transform: scaleY(1);
+    transition: transform 200ms;
+    transform-origin: bottom;
+}
+
+.in-diplomea:hover h3 {
+    transform: translate(0,-1em);
+    transition: transform 200ms;
+}
+
+.in-diplomeb:hover h3 {
+    transform: translate(0,-1em);
+    transition: transform 200ms;
 }
 
 #experiences {
@@ -267,18 +381,6 @@ ul{
     border: 3px #1d237e outset;
 }
 
-.in-experiences1:hover {
-    background-color: lightgray;
-    color: black;
-    transition: 400ms;
-}
-
-.in-experiences2:hover {
-    background-color: lightgray;
-    color: black;
-    transition: 400ms;
-}
-
 .in-experiences2 {
     position: relative;
     z-index: 2;
@@ -292,6 +394,26 @@ ul{
     background-color: #4e528a;
     font-family: 'rubikregular';
     border: 3px #1d237e outset;
+}
+
+#deroulant-exp1, #deroulant-exp2, #deroulant-exp3, #deroulant-exp4, #deroulant-exp5, #deroulant-exp6, #deroulant-exp7 {
+    transform: scale(0);
+    position: absolute;
+    height: 10em;
+    width: 20em;
+    background-color: rgb(252, 252, 252);
+}   
+
+#deroulant-exp1 p, #deroulant-exp2 p, #deroulant-exp3 p, #deroulant-exp4 p, #deroulant-exp5 p, #deroulant-exp6 p, #deroulant-exp7 p {
+    color: rgb(2, 50, 70);
+    font-family: 'quicksandregular';
+    font-size: 25px;
+}
+
+.in-experiences1:hover #deroulant-exp1, .in-experiences1:hover #deroulant-exp2, .in-experiences1:hover #deroulant-exp3, .in-experiences1:hover #deroulant-exp4, .in-experiences2:hover #deroulant-exp5, .in-experiences2:hover #deroulant-exp6, .in-experiences2:hover #deroulant-exp7 {
+    transform: scaleY(1);
+    transition: transform 200ms;
+    transform-origin: top;
 }
 
 #triangle-left1 {
@@ -470,11 +592,11 @@ footer p {
     }
 
     #apropos {
-        margin:auto;
-        height : 20em;
+        margin-left: 4em;
+        height : 10em;
         width: 10em;
-        display: flex;
-        flex-direction: column;
+        display: block;
+        justify-content: center;
         background: none;
         border: none;
         box-shadow: none;
@@ -482,31 +604,29 @@ footer p {
 
     #apropos img {
         position: absolute;
-        margin-left: 6.5em;
-        margin-top: 10em;
         height:180px;
         width: 145px;
+        margin-left: 5em;
+        margin-top:3em;
     }
 
     #total-apropos {
-        padding:0;
-        margin:0;
-        height: 70em;
+        height: 75em;
+        padding: 0;
+        width:29em;
     }
 
     #presentation {
-        height: 10em;
-        width: 20em;
-        text-align: center;
-        margin-top: 25em;
-        margin-left: 1em;
+        margin-top: 18em;
+        margin-left: 3em;
     }
 
     #apropos-droite {
-        position: absolute;
-
-        margin-top: 40em;
-        width: 18em;
+        width: 16em;
+        margin-left:0;
+        margin-top: 5em;
+        padding-top: 0;
+        
     }
 
     #apropos-droite p {
@@ -529,6 +649,8 @@ footer p {
 
     #diplomes h3 {
         color: black; 
+        font-size: 23px;
+        padding-top:1em;
     }
 
     #diplomes p {
@@ -561,6 +683,7 @@ footer p {
         margin-top: 2em;
         padding-top: 0;
         width: 18.7em;
+        height: 10em;
         justify-content: center;
     }
 
@@ -572,8 +695,24 @@ footer p {
         border: 2px black solid;
     }
 
+    #deroulant-dip1, #deroulant-dip2, #deroulant-dip3 {
+        width: 20em;
+        height: 2.5em;
+        margin-top:7.4em;
+    }
+
+    #deroulant-dip4, #deroulant-dip5 {
+        width: 18.7em;
+        height: 2.5em;
+        margin-top:7.5em;
+    }
+
+    #deroulant-dip1 p, #deroulant-dip2 p, #deroulant-dip3 p, #deroulant-dip4 p, #deroulant-dip5 p, #deroulant-dip6 p, #deroulant-dip7 p {
+        font-size: 13px;
+    }
+
     #experiences {
-        height: 107em;
+        height: 105em;
     }
 
     #experiences h1 {
@@ -587,21 +726,26 @@ footer p {
         padding:0;
         margin:auto;
         margin-top: 3em;
-        margin-bottom : 0;
     }
 
     .in-experiences2 {
         display: flex;
         flex-direction: column;
         margin:auto;
-        margin-top: 3em;
+        margin-bottom: 3em;
     }
 
-    #triangles {
-        display: none;
+    #deroulant-exp1, #deroulant-exp2, #deroulant-exp3, #deroulant-exp4, #deroulant-exp5, #deroulant-exp6, #deroulant-exp7 {
+        width: 20em;
+        height: 10em;
     }
 
-    #rectangles {
+    #deroulant-exp1 p, #deroulant-exp2 p, #deroulant-exp3 p, #deroulant-exp4 p, #deroulant-exp5 p, #deroulant-exp6 p, #deroulant-exp7 p {
+        font-size: 20px;
+        padding-top: 1em;
+    }
+
+    #triangles, #rectangles {
         display: none;
     }
 
@@ -612,12 +756,13 @@ footer p {
     footer p {
         text-align: center;
         position: absolute;
+        margin:auto;
         margin-top: 5em;
         margin-left: 2.5em;
     }
 
     footer svg, a {
-        margin:0;
+        margin:auto;
         margin-top : 1.5em;
         margin-left: 5em;
     }
@@ -674,38 +819,19 @@ footer p {
         padding-left: 1em;
     }
 
+    #sepa-diplome {
+        margin-top:1em;
+    }
+
     #diplomes {
-        height: 32em;
+        height: 40em;
     }
 
     #diplomes h1{
         font-size: 30px;
         padding-top: 1.5em;
     } 
-
-    #sepa-diplome {
-        margin-top:1em;
-        margin-bottom: 2em;
-    }
-
-    .in-diplomea {
-        border-radius: 0%;
-        height: 5em;
-        width: 7em;
-        margin: auto;
-        margin-top: 2em;
-        padding-top:1em;
-    }
-
-    .in-diplomeb {
-        border-radius: 0%;
-        height: 5em;
-        width: 7em;
-        margin:10px;
-        margin-top:1em;
-        padding-top: 1em;
-    }
-
+    
     #dip-1 {
         display: flex;
         justify-content: center;
@@ -713,27 +839,43 @@ footer p {
         font-size: 22px;
     }
 
-    .in-diplomea h3 {
-        font-size: 9px;
+    #diplomes h3 {
+        font-size: 16px;
     }
 
-    .in-diplomea p {
-        font-size: 9px;
+    .in-diplomea{
+        width: 6em;
+        height: 5em;
+        padding-top:1em;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
-    .in-diplomeb h3 {
-        font-size: 9px;
+    .in-diplomeb{
+        width: 6em;
+        height: 6em;
+        padding-top:1em;
+        margin-left: 1em;
+        margin-right:1em;
     }
 
-    .in-diplomeb p {
-        font-size: 9px;
+    #deroulant-dip1, #deroulant-dip2, #deroulant-dip3 {
+        width: 6em;
+        height: 1.5em;
+        margin-top:3.5em;
     }
 
-    #triangles {
-        display: none;
+    #deroulant-dip4, #deroulant-dip5 {
+        width: 6em;
+        height: 1.5em;
+        margin-top:4.5em;
     }
-    
-    #rectangles {
+
+    #deroulant-dip1 p, #deroulant-dip2 p, #deroulant-dip3 p, #deroulant-dip4 p, #deroulant-dip5 p, #deroulant-dip6 p, #deroulant-dip7 p {
+        font-size: 12px;
+    }
+
+    #triangles, #rectangles {
         display: none;
     }
 
@@ -760,8 +902,16 @@ footer p {
         padding:0;
     }
 
-
     .in-experiences1 h3, h4, p {
+        font-size: 15px;
+    }
+
+    #deroulant-exp1, #deroulant-exp2, #deroulant-exp3, #deroulant-exp4, #deroulant-exp5, #deroulant-exp6, #deroulant-exp7 {
+        width: 12em;
+        height: 8em;
+    }
+
+    #deroulant-exp1 p, #deroulant-exp2 p, #deroulant-exp3 p, #deroulant-exp4 p, #deroulant-exp5 p, #deroulant-exp6 p, #deroulant-exp7 p {
         font-size: 15px;
     }
 
@@ -845,6 +995,22 @@ footer p {
         padding-top: 2em;
     }
 
+    #diplomes h3 {
+        font-size: 16px;
+    }
+
+    .in-diplomea{
+        width: 15em;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    .in-diplomeb{
+        width: 15em;
+        height: 10em;
+        margin-left: 3em;
+    }
+
     #dip-1 {
         display: flex;
         justify-content: center;
@@ -852,44 +1018,17 @@ footer p {
         font-size:12px;
     }
 
-    #sepa-diplome {
-        margin-top:1em;
-    }
-    .in-diplomea {
-        height: 9em;
-        width: 16.6em;
-        border-radius: 0;
-        padding-top: 1em;
-        padding-bottom: 0;
-        margin: auto;
-        margin-top: 5em;
+    #deroulant-dip1, #deroulant-dip2, #deroulant-dip3, #deroulant-dip4, #deroulant-dip5 {
+        width: 15em;
+        margin-top:5.8em;
     }
 
-    .in-diplomeb {
-        height: 9em;
-        width: 16em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: auto;
-        margin-top: 2em;
+    #deroulant-dip1 p, #deroulant-dip2 p, #deroulant-dip3 p, #deroulant-dip4 p, #deroulant-dip5 p, #deroulant-dip6 p, #deroulant-dip7 p {
+        font-size: 15px;
     }
 
-    #experiences h1 {
-        font-size: 40px;
-        padding-top: 2em;
-    }
-
-    #triangles {
+    #triangles, #rectangles {
         display: none;
-    }
-
-    #rectangles {
-        display: none;
-    }
-
-    #sepa-exp {
-        margin-top: 2.5em;
-        margin-bottom: 5em;
     }
 
     .in-experiences1 {
@@ -904,6 +1043,15 @@ footer p {
         margin:1em;
     }
 
+    #deroulant-exp1, #deroulant-exp2, #deroulant-exp3, #deroulant-exp4, #deroulant-exp5, #deroulant-exp6, #deroulant-exp7 {
+        width: 16em;
+        height: 9em;
+    }
+
+    #deroulant-exp1 p, #deroulant-exp2 p, #deroulant-exp3 p, #deroulant-exp4 p, #deroulant-exp5 p, #deroulant-exp6 p, #deroulant-exp7 p {
+        font-size: 18px;
+    }
+
     #exp-1 {
         display: flex;
         justify-content: center;
@@ -911,7 +1059,7 @@ footer p {
     }
 
     #experiences {
-        height: 63em;
+        height: 60em;
     }
 
     footer svg {
@@ -975,19 +1123,6 @@ footer p {
         font-size: 18px;
     }
 
-    #diplomes {
-        height: 43em;
-    }
-
-    #diplomes h1 {
-        font-size: 40px;
-        padding-top: 2em;
-    }
-
-    #sepa-diplome {
-        margin-top: 1em;
-    }
-
     #dip-1 {
         display: flex;
         justify-content: center;
@@ -995,41 +1130,43 @@ footer p {
         font-size: 13px;
     }
 
-    .in-diplomea {
-        width: 20em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: auto;
-        margin-top: 5em;
+    #diplomes {
+        height: 50em;
     }
 
-    .in-diplomeb {
-        width: 20em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+    #diplomes h3{
+        font-size: 28px;
+    }
+    .in-diplomea{
+        margin-left: 5px;
+        margin-right: 10px;
+        height: 8em;
+        width: 19em;
     }
 
-    #triangles {
+    .in-diplomeb{
+        margin-left: 5em;
+        margin-right: 5em;
+        height: 8em;
+        width: 19em;
+    }
+
+    #deroulant-dip1, #deroulant-dip2, #deroulant-dip3 {
+        width: 19em;
+        margin-top:9.6em;
+    }
+
+    #deroulant-dip4, #deroulant-dip5 {
+        width: 19em;
+        margin-top:10.7em;
+    }
+
+    #deroulant-dip1 p, #deroulant-dip2 p, #deroulant-dip3 p, #deroulant-dip4 p, #deroulant-dip5 p, #deroulant-dip6 p, #deroulant-dip7 p {
+        font-size: 18px;
+    }
+
+    #triangles, #rectangles {
         display: none;
-    }
-
-    #rectangles {
-        display: none;
-    }
-
-    #experiences {
-        height: 78em;
-    }
-
-    #experiences h1 {
-        font-size: 40px;
-        padding-top : 2em;
-    }
-
-    #sepa-exp {
-        margin-top: 2.5em;
-        margin-bottom: 4em;
     }
 
     #exp-1 {
@@ -1038,18 +1175,17 @@ footer p {
         flex-wrap: wrap;
     }
 
+    #experiences {
+        height: 68em;
+    }
+
     .in-experiences1 {
-        width: 20em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+        margin-left: 2em;
+        margin-top: 2em;
     }
 
     .in-experiences2 {
-        width: 20em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+        margin-left: 2em;
     }
 
     footer svg {
@@ -1113,62 +1249,30 @@ footer p {
         font-size: 18px;
     }
 
-    #diplomes {
-        height: 43em;
-    }
-
-    #diplomes h1 {
-        font-size: 40px;
-        padding-top: 2em;
-    }
-
-    #sepa-diplome {
-        margin-top: 1em;
-    }
-
     #dip-1 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        font-size: 13px;
-        margin: 20px;
     }
 
-    .in-diplomea {
-        width: 23em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: auto;
-        margin-top: 5em;
+    .in-diplomea{
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 8em;
+        width: 19em;
     }
 
-    .in-diplomeb {
-        width: 23em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+    .in-diplomeb{
+        margin-left: 5em;
+        margin-right: 5em;
     }
 
-    #triangles {
+    #deroulant-dip1, #deroulant-dip2, #deroulant-dip3 {
+        width: 19em;
+    }
+
+    #triangles, #rectangles {
         display: none;
-    }
-
-    #rectangles {
-        display: none;
-    }
-
-    #experiences {
-        height: 60em;
-    }
-
-    #experiences h1 {
-        font-size: 40px;
-        padding-top : 2em;
-    }
-
-    #sepa-exp {
-        margin-top: 2.5em;
-        margin-bottom: 4em;
     }
 
     #exp-1 {
@@ -1178,17 +1282,21 @@ footer p {
     }
 
     .in-experiences1 {
+        margin-left: 0.5em;
         width: 15em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
     }
 
-    .in-experiences2 {
+    .in-experiences2{
+        margin-left: 2em;
         width: 15em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+    }
+
+    #deroulant-exp1, #deroulant-exp2, #deroulant-exp3, #deroulant-exp4, #deroulant-exp5, #deroulant-exp6, #deroulant-exp7 {
+        width: 15em;
+    }
+
+    #deroulant-exp1 p, #deroulant-exp2 p, #deroulant-exp3 p, #deroulant-exp4 p, #deroulant-exp5 p, #deroulant-exp6 p, #deroulant-exp7 p {
+        font-size: 20px;
     }
 
     footer svg {
@@ -1219,82 +1327,47 @@ footer p {
         padding: 0;
     }
 
-    #diplomes {
-        height: 43em;
-    }
-
-    #diplomes h1 {
-        font-size: 40px;
-        padding-top: 2em;
-    }
-
-    #sepa-diplome {
-        margin-top: 1em;
-    }
-
     #dip-1 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        font-size: 13px;
     }
 
-    .in-diplomea {
-        width: 30em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: auto;
-        margin-top: 5em;
+    .in-diplomea{
+        margin-left: 4em;
+        margin-right: 2em;
     }
 
-    .in-diplomeb {
-        width: 30em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+    .in-diplomeb{
+        margin-left: 10em;
+        margin-right: 8em;
     }
 
-    #triangles {
+    #triangles, #rectangles {
         display: none;
-    }
-
-    #rectangles {
-        display: none;
-    }
-
-    #experiences {
-        height: 63em;
-    }
-
-    #experiences h1 {
-        font-size: 40px;
-        padding-top : 2em;
-    }
-
-    #sepa-exp {
-        margin-top: 2.5em;
-        margin-bottom: 4em;
     }
 
     #exp-1 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        font-size: 14px;
     }
 
     .in-experiences1 {
-        width: 25em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+        margin-left: 1.4em;
+        width: 18em;
     }
 
-    .in-experiences2 {
-        width: 25em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+    .in-experiences2{
+        margin-left: 5em;
+    }
+
+    #deroulant-exp1, #deroulant-exp2, #deroulant-exp3, #deroulant-exp4 {
+        width: 18em;
+    }
+
+    #deroulant-exp4 p {
+        font-size: 23px;
     }
 
     footer svg {
@@ -1325,61 +1398,46 @@ footer p {
         padding: 0;
     }
 
-    #diplomes {
-        height: 43em;
-    }
-
-    #diplomes h1 {
-        font-size: 40px;
-        padding-top: 2em;
-    }
-
-    #sepa-diplome {
-        margin-top: 1em;
-    }
-
     #dip-1 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        font-size: 15px;
+        font-size: 13px;
+    }
+
+    #diplomes {
+        height: 70em;
     }
 
     .in-diplomea {
-        width: 30em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: auto;
-        margin-top: 5em;
+        font-size: 25px;
+        width: 13em;
+        margin-right: 2em;
+        margin-left: 2em;
     }
 
     .in-diplomeb {
-        width: 30em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+        font-size: 25px;
+        width: 13em;
+        height: 12.5em;
+        margin-left: 5em;
+        margin-right: 5em;
     }
 
-    #triangles {
+    #deroulant-dip1, #deroulant-dip2, #deroulant-dip3 {
+        margin-top: 7em;
+        height: 3em;
+        width: 13em;
+    }
+
+    #deroulant-dip4, #deroulant-dip5 {
+        margin-top: 9.5em;
+        height: 3em;
+        width: 13em;
+    }
+
+    #triangles, #rectangles{
         display: none;
-    }
-
-    #rectangles {
-        display: none;
-    }
-
-    #experiences {
-        height: 63em;
-    }
-
-    #experiences h1 {
-        font-size: 40px;
-        padding-top : 2em;
-    }
-
-    #sepa-exp {
-        margin-top: 2.5em;
-        margin-bottom: 4em;
     }
 
     #exp-1 {
@@ -1388,18 +1446,12 @@ footer p {
         flex-wrap: wrap;
     }
 
-    .in-experiences1 {
-        width: 25em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+    .in-experiences1{
+        margin-left: 4em;
     }
 
-    .in-experiences2 {
-        width: 25em;
-        border-radius: 0;
-        padding-top: 1em;
-        margin: 2em;
+    .in-experiences2{
+        margin-left: 10em;
     }
 
     footer svg {
